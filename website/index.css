@@ -1,0 +1,387 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #f2f2f2;
+  color: #333;
+  padding: 20px;
+}
+
+/* Header */
+header {
+  background-color: #444;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5rem;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 15px;
+  list-style: none;
+}
+
+nav ul li {
+  background-color: #666;
+  padding: 10px 15px;
+  border-radius: 5px;
+  color: #fff;
+}
+
+/* Intro Section */
+.intro {
+  text-align: center;
+  margin: 30px 0;
+  padding: 60px 20px;
+  background-image: url('.\images\1.jpg'); /* Replace with actual image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white; /* Ensures text contrast */
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Vision & Mission */
+.vision-mission {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ddd;
+  padding: 30px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+}
+
+.vision, .mission {
+  width: 48%;
+}
+
+.vision h3, .mission h3 {
+  color: #222;
+}
+
+/* Services Buttons */
+.services-section {
+  margin: 40px 0;
+  text-align: center;
+}
+
+.services-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.service-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Always 3 cards per row */
+  gap: 30px; /* more space between cards */
+  justify-content: center;
+  max-width: 1200px; /* increased for wider cards */
+  margin: 0 auto;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  padding: 15px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.card img {
+  width: 100%;
+  height: 200px; /* Increased from 120px */
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.card p {
+  margin-top: 15px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #333;
+}
+
+
+/* What’s New */
+.whats-new {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.whats-new h2 {
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+}
+
+.whats-new-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.left-rectangle,
+.center-rectangle,
+.right-rectangle {
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* Left */
+.left-rectangle img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.left-rectangle h3 {
+  margin-bottom: 10px;
+}
+
+.left-rectangle p {
+  margin-bottom: 20px;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+.left-rectangle button {
+  padding: 10px 20px;
+  background-color: #5e4633;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Center */
+/* Center */
+.center-rectangle h3 {
+  margin: 20px 0 10px;
+}
+
+/* Shared styling for both workshops */
+.workshop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  gap: 15px;
+}
+
+/* Previous Workshop – text on left, image on right */
+.previous-workshop .text {
+  width: 50%;
+  text-align: left;
+}
+
+.previous-workshop img {
+  width: 45%;
+  border-radius: 8px;
+}
+
+/* Upcoming Workshop – image on left, text on right */
+.upcoming-workshop {
+  display: flex;                 /* 🟢 Add this line */
+  flex-direction: row-reverse;  /* 🟢 Works now */
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.upcoming-workshop .text {
+  width: 50%;
+  text-align: right;
+}
+
+.upcoming-workshop img {
+  width: 45%;
+  border-radius: 8px;
+}
+/* Right */
+.right-rectangle .update-block {
+  margin-bottom: 20px;
+}
+
+.right-rectangle h4 {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.right-rectangle img {
+  width: 100%;
+  border-radius: 8px;
+  height: auto;
+}
+
+/* Know Our City Section */
+.know-our-city {
+  margin: 60px 0;
+  background-color: #f2f2f2;
+  padding: 40px 20px;
+  border-radius: 12px;
+}
+
+.city-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.city-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.city-text h2 {
+  font-size: 2rem;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.circles {
+  display: flex;
+  gap: 50px;
+  margin-bottom: 15px;
+}
+
+.circle {
+  width: 14px;
+  height: 14px;
+  background-color: #5e4633;
+  border-radius: 50%;
+   margin: 0 8px;
+}
+
+.subheading {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  text-align: left;
+  color: #333;
+}
+
+.city-text p {
+  text-align: left;
+  color: #444;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.read-more-btn {
+  background-color: #5e4633;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Right Side Image Grid */
+.city-images {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  min-width: 300px;
+}
+
+.city-images img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+
+/* Sustainability Topics */
+.sustainability {
+  background-color: #ddd;
+  padding: 20px;
+  margin-bottom: 40px;
+  border-radius: 6px;
+}
+
+.sustainability ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.sustainability li {
+  background-color: #bbb;
+  padding: 10px 14px;
+  border-radius: 5px;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #333;
+  color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+}
+
+footer h4 {
+  margin-bottom: 10px;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer ul li {
+  margin-bottom: 5px;
+}
+
+.newsletter input {
+  padding: 8px;
+  width: 180px;
+  margin-top: 5px;
+  border: none;
+  border-radius: 4px;
+}
+
+.newsletter button {
+  padding: 8px 12px;
+  margin-top: 8px;
+  background-color: #777;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
