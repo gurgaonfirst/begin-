@@ -14,16 +14,16 @@
     <img src="./images/logo.jpeg" alt="Gurgaon First Logo">
   </div>
   <nav class="nav-links">
-    <a href="home.html">Home</a>
 
     <div class="dropdown">
       <a href="aboutgurgaon.html">About Gurgaon</a>
       <div class="dropdown-content">
-        <a href="#">History</a>
+        <a href="/website/FactFile.html">Fact File</a>
         <a href="#">Office and Departments</a>
         <a href="#">City Spaces</a>
-        <a href="#">Governance</a>
+        <a href="#">City Governance</a>
         <a href="#">Quick Help</a>
+        <a href="#">Eco Hub</a>
         <a href="#">Newsletter</a>
       </div>
     </div>
@@ -66,8 +66,7 @@
       </div>
     </div>
 
-    <a href="blog.html">Blog</a>
-    <a href="fromourdedsk.html">From Our Desk</a>
+    <a href="/website/contactus.html">Contact Us</a>
   </nav>
 </header>
 
@@ -79,7 +78,33 @@
     <p>
       We strive to build a better Gurgaon through sustainability, good governance, and active community involvement.
     </p>
+    </div>
+     <div class="from-desk-link">
+      <a href="fromourdedsk.html">From Our Desk</a>
+    </div>
+</section>
+
+<!-- === Newsletter Ticker Section === -->
+<section class="newsletter-banner">
+   <a href="/website/newsletter.html" class="newsletter-link">
+  <div class="newsletter-container">
+    <div class="newsletter-left-box">
+      <i class="fas fa-envelope"></i>
+      <p>LATEST<br>NEWSLETTER<br>HEADLINES</p>
+      <div class="arrow"></div>
+    </div>
+    <div class="news-ticker">
+      <div class="ticker-track" id="ticker-track">
+        <div class="ticker-item-box">Gurugram Welcomes New Mayor<br><span>5 Months Ago</span></div>
+        <div class="ticker-item-box">Construction of Gurugram Metro Expansion to Begin on May 1 <br><span>5 Months Ago</span></div>
+        <div class="ticker-item-box">Major Road Infrastructure Boost Planned for Gurugram <br><span>This Week</span></div>
+        <div class="ticker-item-box">New Agency for door-to door waste collection and new C&D processing sites <br><span>Recently</span></div>
+        <div class="ticker-item-box">Haryana CM Approves ₹3,000 Crore Pipeline Project for Gurugram Water Supply <br><span>2 Weeks Ago</span></div>
+          <div class="ticker-item-box">Gurugram seventh the list of top 10 polluted Indian cities <br><span>1 Week Ago</span></div>
+      </div>
+    </div>
   </div>
+</a>
 </section>
 
 <!--mission vision-->
@@ -98,12 +123,13 @@
   </div>
 </section>
 
+<!--explore the services-->
  <section class="services-section">
   <h2>Explore Our Services</h2>
   <div class="service-cards">
     <div class="cards-container"> <!-- ✅ Wrap all cards inside this container -->
       <a href="/workshops.html" class="card">
-        <img src="images/workshop1.jpg" alt="Workshops">
+        <img src="images/exploreourserviceswork.jpeg" alt="Workshops">
         <p>Workshops</p></a>
 
       <a href="/podcast.html" class="card">
@@ -133,7 +159,6 @@
   <section class="whats-new">
   <h2>What's New</h2>
 
-  <!-- ✅ Add wrapper for background -->
   <div class="whats-new-background">
     <div class="whats-new-grid">
 
@@ -146,43 +171,64 @@
       </div>
 
       <!-- Center Rectangle -->
-      <div class="center-rectangle">
-        <h3>Previous Workshop</h3>
-        <div class="workshop previous-workshop">
-          <div class="text">
-            <p>A successful event covering sustainable urban planning and civic tech solutions.</p>
-          </div>
-          <img src="images/latestworkshop.jpg" alt="Previous Workshop">
-        </div>
+<div class="center-rectangle">
+  <div class="previous-workshop-flex">
+    <!-- Text Content -->
+    <div class="workshop-text">
+      <a href="/website/previous-workshops.html" class="workshop-link">
+        <h3>Our Previous Workshop</h3>
+        <p class="workshop-description">
+          April 1, 2025<br>
+          A roundtable of Gurgaon NGO schools was held to explore the formation of a collaborative network aimed at improving learning outcomes for underserved children. The discussion focused on sharing resources, leveraging collective strengths, and fostering cooperation to create a stronger ecosystem for inclusive education in the city.
+        </p>
+      </a>
+    </div>
 
-        <h3>Upcoming Workshop</h3>
-        <div class="workshop upcoming-workshop">
-          <img src="images/upcoming-workshop.jpg" alt="Upcoming Workshop">
-          <div class="text">
-            <p>Join our upcoming session on community-based waste management practices.</p>
-          </div>
+    <!-- Image Carousel -->
+    <div class="carousel-wrapper">
+      <button class="prev-btn">&#10094;</button>
+      <div class="carousel-track-container">
+        <div class="carousel-track" id="carouselTrack">
+          <a href="/website/previous-workshops.html"><img src="images/latestworkshop.jpg" alt="Previous Workshop"></a>
+          <a href="/website/previous-workshops.html"><img src="images/previousworkshop2.JPG" alt="Previous Workshop"></a>
+          <a href="/website/previous-workshops.html"><img src="images/previousworkshop3.JPG" alt="Previous Workshop"></a>
+          <a href="/website/previous-workshops.html"><img src="images/previousworkshop1.JPG" alt="Previous Workshop"></a>
         </div>
       </div>
+      <button class="next-btn">&#10095;</button>
+    </div>
+  </div>
+
+  <h3>Our Upcoming Workshop</h3>
+  <div class="workshop upcoming-workshop">
+    <img src="images/upcoming-workshop.jpg" alt="Upcoming Workshop">
+    <div class="text">
+      <p>Join our upcoming sustainable training workshop at Management Education & Research Institute (MERI), Delhi.</p>
+    </div>
+  </div>
+</div>
+
 
       <!-- Right Rectangle -->
       <div class="right-rectangle">
         <div class="update-block">
-          <h4>Latest Workshop</h4>
-          <img src="images/latestworkshop.jpg" alt="Latest Workshop">
+          <h4>Our Latest Newsletter</h4>
+          <a href="/website/newsletter.html" target="_blank" rel="noopener noreferrer">
+            <img src="images/latestnewsletter.jpg" alt="Latest Newsletter">
+          </a>
         </div>
         <div class="update-block">
-          <h4>Latest Newsletter</h4>
-          <img src="images/latestnewsletter.jpg" alt="Latest Newsletter">
-        </div>
-        <div class="update-block">
-          <h4>Latest Podcast</h4>
-          <img src="images/latestpodcast.jpg" alt="Latest Podcast">
+          <h4>Our Latest Podcast</h4>
+          <a href="/website/podcast.html" target="_blank" rel="noopener noreferrer">
+            <img src="images/latestpodcast.jpg" alt="Latest Podcast">
+          </a>
         </div>
       </div>
 
     </div>
-  </div> <!-- end background wrapper -->
+  </div>
 </section>
+
 
 <section class="know-our-city">
   <div class="city-grid">
@@ -196,17 +242,20 @@
         <span class="circle" data-index="1"></span>
         <span class="circle" data-index="2"></span>
         <span class="circle" data-index="3"></span>
+        <span class="circle" data-index="4"></span>
+        <span class="circle" data-index="5"></span>
       </div>
 
       <!-- Dynamic Subheading -->
-      <h3 class="subheading" id="citySubheading">History</h3>
+      <h3 class="subheading" id="citySubheading">Fact File</h3>
 
       <!-- Dynamic Description -->
       <p id="cityDescription">
-        Gurgaon, once a village associated with Guru Dronacharya, the revered teacher of the Kauravas and Pandavas, has a rich history influenced by various rulers. During Akbar’s reign, it was part of Delhi and Agra’s territories. In the early 19th century, the British established control over Gurgaon, initially monitoring Begum Samru’s forces. After the 1857 revolt, Gurgaon was moved from the North-Western provinces to the Punjab province.
+        Named after Guru Dronacharya, to whom it was gifted as a village, Gurgaon has evolved from a quiet agrarian district into a global business hub—home to over 250 Fortune 500 companies and contributing more than 50% to Haryana’s GDP.
+Yet, despite its modern skyline and booming economy, the city now faces the urgent challenge of balancing rapid growth with sustainability and inclusive development.
       </p>
 
-      <button class="read-more-btn">Read More</button>
+      <a href="/website/knowourcity.html" class="read-more-btn">Read More</a>
     </div>
 
     <!-- Right Side: Images in fixed background -->
@@ -217,16 +266,24 @@
           <div class="overlay-text">History</div>
         </div>
         <div class="image-wrapper">
-          <img src="images/offandep.jpg" alt="City View 2">
+          <img src="images/knowourcityoffandep.jpeg" alt="City View 2">
           <div class="overlay-text">Office and Departments</div>
         </div>
         <div class="image-wrapper">
-          <img src="images/cityspaces.jpg" alt="City View 3">
+          <img src="images/city-spaces.jpg" alt="City View 3">
           <div class="overlay-text">City Spaces</div>
         </div>
         <div class="image-wrapper">
           <img src="images/governance-1.jpg" alt="City View 4">
-          <div class="overlay-text">Governance</div>
+          <div class="overlay-text">City Governance</div>
+        </div>
+         <div class="image-wrapper">
+          <img src="images/Eco-Hub-1.jpg" alt="City View 5">
+          <div class="overlay-text">Eco Hub</div>
+        </div>
+        <div class="image-wrapper">
+          <img src="#" alt="City View 6">
+          <div class="overlay-text">Quick Help</div>
         </div>
       </div>
     </div>
@@ -238,7 +295,6 @@
   <h3>How Sustainable Is Our City?</h3>
 
   <div class="sustainability-slider">
-    <button class="slider-btn left">&#10094;</button>
 
     <div class="slider-window">
       <div class="topics-grid" id="topicsGrid">
@@ -277,151 +333,258 @@
           <p>Women Safety</p>
           <div class="topic-description">Ensuring safety for women in public and private spaces remains crucial.</div>
         </div>
-        <div class="topic-item">
-          <img src="images/Eco-Hub-1.jpg" alt="Eco Hub" />
-          <p>Eco Hub</p>
-          <div class="topic-description">Eco Hubs promote community sustainability and environmental action.</div>
-        </div>
-      </div>
-    </div>
-
-    <button class="slider-btn right">&#10095;</button>
-  </div>
 
   <div class="read-more-container">
-    <button class="read-more-btn">Read More</button>
-  </div>
+  <a href="/website/sustainabledevelopment.html" class="read-more-btn">Read More</a>
+</div>
 </section>
 
-<!--expert opinion-->
-<section class="expert-opinion">
+  <section class="expert-opinion">
   <h2 class="expert-heading">Expert Opinion</h2>
 
   <div class="expert-carousel">
-    <!-- Slide 1 -->
-    <div class="expert-slide active">
-      <div class="expert-card">
+    <div class="expert-track" id="expertTrack">
+
+      <!-- Expert 1 -->
+      <div class="expert-item">
         <div class="expert-image">
-          <img src="images/arti-jaiman.jpg" alt="Arti Jaiman">
+          <img src="images/arti-jaiman.jpg" alt="Arti Jaiman" />
         </div>
         <div class="expert-text">
           <h3 class="subheading">The Gurgaon to Gurugram journey</h3>
           <p class="description">
-            A little under 10 years after the Maruti Suzuki factory was set up in the middle of the mustard fields of Gurgaon, 
-            the new urban enclaves of Gurgaon such as Palam Vihar and Qutab Enclave began to see its early residents move in.
+            A little under 10 years after the Maruti Suzuki factory was set up in the middle of the mustard fields of Gurgaon, the new urban enclaves of Gurgaon such as Palam Vihar of the Ansals and Qutab Enclave of DLF began to see its early...
           </p>
-          <p class="expert-name"><strong>ARTI JAIMAN</strong>, Founder, Gurgaon ki Awaaz</p>
+          <p class="expert-name"><strong>Arti Jaiman</strong>, Founder, Gurgaon ki Awaaz</p>
         </div>
       </div>
 
-      <div class="expert-card">
+      <!-- Expert 2 -->
+      <div class="expert-item">
         <div class="expert-image">
-          <img src="images/shikha-gupta.jpg" alt="Shikha Gupta">
+          <img src="images/shikha-gupta.jpg" alt="Shikha Gupta" />
         </div>
         <div class="expert-text">
           <h3 class="subheading">Gurgaon as a Cultural City</h3>
           <p class="description">
-            Gurgaon is a city of diverse cultures, values, and tastes. Art and culture serve as the sole thread connecting all citizens.
+            Gurgaon is a city of diverse cultures, values, and tastes. And for any city art and culture serve as the sole thread capable of connecting every citizen together transcending cultural or societal differences. Art and culture fosters a sense of unity...
           </p>
           <p class="expert-name"><strong>Shikha Gupta</strong>, Director, Kalagram</p>
         </div>
       </div>
-    </div>
 
-    <!-- Slide 2 -->
-    <div class="expert-slide">
-      <div class="expert-card">
+      <!-- Expert 3 -->
+      <div class="expert-item">
         <div class="expert-image">
-          <img src="images/Col.-Kr-Pratap-Singh.jpg" alt="Col. Kr. Pratap Singh">
+          <img src="images/Col.-Kr-Pratap-Singh.jpg" alt="Col. Kr. Pratap Singh" />
         </div>
         <div class="expert-text">
           <h3 class="subheading">Gurgaon: Not a Smart City</h3>
           <p class="description">
-            Gurgaon’s lifestyle and infrastructure may look modern, but sustainable development still has a long way to go.
+            Gurgaon is a cosmopolitan millennium city on the world map. Beautiful builder societies and condominiums are either present or coming-up in Gurgaon. The night life, shopping and glitter surpasses New York and Singapore in looks...
           </p>
           <p class="expert-name"><strong>Col. Kr. Pratap Singh</strong>, Chairman, JAFRA</p>
         </div>
       </div>
 
-      <div class="expert-card">
+      <!-- Expert 4 -->
+      <div class="expert-item">
         <div class="expert-image">
-          <img src="images/bridje.jpg" alt="Brig. S K Sharma">
+          <img src="images/bridje.jpg" alt="Brig. S K Sharma" />
         </div>
         <div class="expert-text">
-          <h3 class="subheading">Gurugram Liveability Index</h3>
+          <h3 class="subheading">Gurugram's Liveability Index</h3>
           <p class="description">
-            The Liveability Index ranks cities based on urban development and citizen well-being.
+            The Liveability Index is a tool used to rank cities based on a comprehensive set of parameters that measure various aspects of urban living. In developed countries, the index often prioritizes commercial and economic factors...
           </p>
           <p class="expert-name"><strong>Brig. S K Sharma</strong>, Urban Planner</p>
         </div>
       </div>
+
+      <!-- Expert 5 -->
+      <div class="expert-item">
+        <div class="expert-image">
+          <img src="images/sangeetanayyar.jpeg" alt="Sangeeta Nayyar" />
+        </div>
+        <div class="expert-text">
+          <h3 class="subheading">Turning Trash to Treasure at Ridgewood Estate</h3>
+          <p class="description">
+            Piles of garbage. That’s the image that haunted me for years—at street corners, outside gates, next to parks. It was everywhere, and it deeply disturbed me. I couldn’t understand why we had come to accept this mess as a part of our daily lives. Over time..
+          </p>
+          <p class="expert-name"><strong>Pooja Mehta</strong>, Environmental Consultant</p>
+        </div>
+      </div>
+
+      <!-- Expert 6 -->
+      <div class="expert-item">
+        <div class="expert-image">
+          <img src="images/rahul-verma.jpg" alt="Rahul Verma" />
+        </div>
+        <div class="expert-text">
+          <h3 class="subheading">Youth & Civic Engagement</h3>
+          <p class="description">
+            Youth participation in civic life drives long-term change in any urban setting. Gurugram has a strong base of student organizations and youth initiatives that must be nurtured through programs, internships, and social innovation hubs. Let’s make the youth stakeholders in decision-making and city governance.
+          </p>
+          <p class="expert-name"><strong>Rahul Verma</strong>, Founder, Aap Ki Sadak</p>
+        </div>
+      </div>
+
+      <!-- Expert 7 -->
+      <div class="expert-item">
+        <div class="expert-image">
+          <img src="images/dr-seema-kapoor.jpg" alt="Dr. Seema Kapoor" />
+        </div>
+        <div class="expert-text">
+          <h3 class="subheading">Public Health in Cities</h3>
+          <p class="description">
+            In urban areas like Gurgaon, healthcare infrastructure needs major revamping. The focus should shift from reactive healthcare to preventive systems. Health data transparency, affordable clinics, community health volunteers, and clean water are pillars of urban wellness. Local governments must invest accordingly.
+          </p>
+          <p class="expert-name"><strong>Dr. Seema Kapoor</strong>, Public Health Expert</p>
+        </div>
+      </div>
+
+      <!-- Expert 8 -->
+      <div class="expert-item">
+        <div class="expert-image">
+          <img src="images/amit-bansal.jpg" alt="Amit Bansal" />
+        </div>
+        <div class="expert-text">
+          <h3 class="subheading">Job Creation & Startups</h3>
+          <p class="description">
+            Gurugram is poised to become the startup hub of North India with the right policies. Infrastructure, mentorship, ease of doing business, and women entrepreneurship should be key areas. Affordable coworking spaces, networking forums, and angel investor platforms can further boost the local startup ecosystem.
+          </p>
+          <p class="expert-name"><strong>Amit Bansal</strong>, CEO, SkillGrid</p>
+        </div>
+      </div>
+
+      <!-- Expert 9 -->
+      <div class="expert-item">
+        <div class="expert-image">
+          <img src="images/neha-sharma.jpg" alt="Neha Sharma" />
+        </div>
+        <div class="expert-text">
+          <h3 class="subheading">Sustainable Waste Management</h3>
+          <p class="description">
+            Community-led waste segregation and recycling practices must be encouraged in every ward. Gurugram should implement smart bins, local composting units, and ward-level tracking. Behavioural change through schools and RWAs will ensure long-term adoption of clean and green practices.
+          </p>
+          <p class="expert-name"><strong>Neha Sharma</strong>, Sustainability Advocate</p>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
-
 
 
 <!-- Infocus Section -->
 <section class="infocus-section">
-  <!-- Heading with navbar-colored background -->
   <div class="infocus-heading-full">
     <h2>Infocus</h2>
   </div>
 
-  <!-- Cards -->
   <div class="infocus-cards">
 
-    <!-- Card 1: Sector -->
+    <!-- Sector Card -->
     <div class="infocus-card">
       <h3>Sector</h3>
       <div class="image-box">
-        <span class="arrow left">&#9664;</span>
-        <img src="images/sector.jpg" alt="Sector Image">
-        <span class="arrow right">&#9654;</span>
+        <button class="arrow left" onclick="slideLeft(this)">
+          <svg viewBox="0 0 20 20"><path d="M13 15l-5-5 5-5v10z" /></svg>
+        </button>
+
+        <div class="image-slider">
+          <a href="sector-page1.html" target="_blank" data-label="Water"><img src="images/sector1.jpg" alt="Sector 1"></a>
+          <a href="sector-page2.html" target="_blank" data-label="Air"><img src="images/sector2.jpg" alt="Sector 2"></a>
+        </div>
+
+        <div class="image-label">Sector 1</div>
+
+        <button class="arrow right" onclick="slideRight(this)">
+          <svg viewBox="0 0 20 20"><path d="M7 5l5 5-5 5V5z" /></svg>
+        </button>
       </div>
-      <button class="pill-btn"></button>
     </div>
 
-    <!-- Card 2: NGO -->
+    <!-- NGO Card -->
     <div class="infocus-card">
       <h3>NGO</h3>
       <div class="image-box">
-        <span class="arrow left">&#9664;</span>
-        <img src="images/ngo.jpg" alt="NGO Image">
-        <span class="arrow right">&#9654;</span>
+        <button class="arrow left" onclick="slideLeft(this)">
+          <svg viewBox="0 0 20 20"><path d="M13 15l-5-5 5-5v10z" /></svg>
+        </button>
+
+        <div class="image-slider">
+          <a href="ngo-page1.html" target="_blank" data-label="Agrasar"><img src="images/ngo1.jpg" alt="NGO 1"></a>
+          <a href="ngo-page2.html" target="_blank" data-label="Khushboo Welfare Society"><img src="images/ngo2.jpg" alt="NGO 2"></a>
+          <a href="ngo-page3.html" target="_blank" data-label="Lotus Petal Foundation"><img src="images/ngo3.jpg" alt="NGO 3"></a>
+        </div>
+
+        <div class="image-label">Goonj</div>
+
+        <button class="arrow right" onclick="slideRight(this)">
+          <svg viewBox="0 0 20 20"><path d="M7 5l5 5-5 5V5z" /></svg>
+        </button>
       </div>
-      <button class="pill-btn"></button>
     </div>
 
-    <!-- Card 3: Sustainability Project -->
+    <!-- Sustainability Project Card -->
     <div class="infocus-card">
       <h3>Sustainability Project</h3>
       <div class="image-box">
-        <span class="arrow left">&#9664;</span>
-        <img src="images/sustainability.jpg" alt="Sustainability Image">
-        <span class="arrow right">&#9654;</span>
+        <button class="arrow left" onclick="slideLeft(this)">
+          <svg viewBox="0 0 20 20"><path d="M13 15l-5-5 5-5v10z" /></svg>
+        </button>
+
+        <div class="image-slider">
+          <a href="sustainable1.html" target="_blank" data-label="Sikanderpur Watershed Project"><img src="images/sustainableproject1.jpg" alt="Sustainable Project 1"></a>
+          <a href="sustainable2.html" target="_blank" data-label="Wazirbad-Chakkarpur Bundh"><img src="images/sustaijjnableproject2.png" alt="Sustainable Project 2"></a>
+        </div>
+
+        <div class="image-label">Rainwater Harvesting</div>
+
+        <button class="arrow right" onclick="slideRight(this)">
+          <svg viewBox="0 0 20 20"><path d="M7 5l5 5-5 5V5z" /></svg>
+        </button>
       </div>
-      <button class="pill-btn"></button>
     </div>
 
   </div>
 </section>
 
-<!-- Workshops Section -->
-<section class="workshops-section">
-  <div class="workshop-left">
-    <div class="workshop-grid">
-      <img src="images/workshop1.jpg" alt="Workshop 1">
-      <img src="images/workshop2.jpg" alt="Workshop 2">
+
+
+<!-- === WORKSHOPS SECTION === -->
+<section class="workshops">
+  <h2 class="workshops-heading">Our Workshops</h2>
+  <hr class="underline">
+
+  <!-- Slider Container -->
+  <div class="workshop-slider">
+    <button class="slider-btn prev">&#10094;</button>
+
+    <div class="slider-track">
+      <img src="images/workshop-1.jpg" alt="Workshop 1">
+      <img src="images/workshop-2.jpg" alt="Workshop 2">
       <img src="images/workshop-3.jpg" alt="Workshop 3">
       <img src="images/workshop-4.jpg" alt="Workshop 4">
+      <img src="images/workshop-5.jpg" alt="Workshop 5">
+      <img src="images/workshop-6.jpg" alt="Workshop 6">
+      <img src="images/workshop-7.jpg" alt="Workshop 7">
+      <img src="images/workshop-8.jpg" alt="Workshop 8">
+      <img src="images/workshop-9.jpg" alt="Workshop 9">
+      <img src="images/workshop-10.jpg" alt="Workshop 10">
+      <img src="images/workshop-11.jpg" alt="Workshop 11">
+      <img src="images/workshop-12.jpg" alt="Workshop 12">
+      <img src="images/workshop-13.jpg" alt="Workshop 13">
+      <img src="images/workshop-14.jpg" alt="Workshop 14">
+      <img src="images/workshop-15.jpg" alt="Workshop 15">
+      <img src="images/workshop-16.jpg" alt="Workshop 16">
+      <img src="images/workshop-17.jpg" alt="Workshop 17">
+      <img src="images/workshop-18.jpg" alt="Workshop 18">
+      <img src="images/workshop-19.jpg" alt="Workshop 19">
     </div>
-  </div>
 
-  <div class="workshop-right">
-    <h3>Our Workshops</h3>
-    <p class="count" id="workshopCount">0</p>
-    <button>Explore</button>
+    <button class="slider-btn next">&#10095;</button>
   </div>
 </section>
 
@@ -434,23 +597,23 @@
       <div class="partner-logo"><img src="images/p1.jpg" alt="Partner 1"></div>
       <div class="partner-logo"><img src="images/p2.jpg" alt="Partner 2"></div>
       <div class="partner-logo"><img src="images/p3.jpg" alt="Partner 3"></div>
-      <div class="partner-logo"><img src="images/p4.jpg" alt="Partner 3"></div>
-      <div class="partner-logo"><img src="images/p5.jpg" alt="Partner 3"></div>
-      <div class="partner-logo"><img src="images/p6.jpg" alt="Partner 3"></div>
-      <div class="partner-logo"><img src="images/p7.jpg" alt="Partner 3"></div>
-      <div class="partner-logo"><img src="images/p8.jpg" alt="Partner 3"></div>
-      <div class="partner-logo"><img src="images/p9.jpg" alt="Partner 3"></div>
-      <div class="partner-logo"><img src="images/p10.jpg" alt="Partner 3"></div>
-      <div class="partner-logo"><img src="images/p11.jpg" alt="Partner 3"></div>
-      <div class="partner-logo"><img src="images/p12.jpg" alt="Partner 3"></div>
-      <div class="partner-logo"><img src="images/p13.jpg" alt="Partner 3"></div>
-      <div class="partner-logo"><img src="images/p14.jpg" alt="Partner 3"></div>
-      <div class="partner-logo"><img src="images/p15.jpg" alt="Partner 3"></div>
-      <div class="partner-logo"><img src="images/p16.jpg" alt="Partner 3"></div>
-      <div class="partner-logo"><img src="images/p17.jpg" alt="Partner 3"></div>
-      <div class="partner-logo"><img src="images/p18.jpg" alt="Partner 3"></div>
-      <div class="partner-logo"><img src="images/p19.jpg" alt="Partner 3"></div>
-      <div class="partner-logo"><img src="images/p20.jpg" alt="Partner 3"></div>
+      <div class="partner-logo"><img src="images/p4.jpg" alt="Partner 4"></div>
+      <div class="partner-logo"><img src="images/p5.jpg" alt="Partner 5"></div>
+      <div class="partner-logo"><img src="images/p6.jpg" alt="Partner 6"></div>
+      <div class="partner-logo"><img src="images/p7.jpg" alt="Partner 7"></div>
+      <div class="partner-logo"><img src="images/p8.jpg" alt="Partner 8"></div>
+      <div class="partner-logo"><img src="images/p9.jpg" alt="Partner 9"></div>
+      <div class="partner-logo"><img src="images/p10.jpg" alt="Partner 10"></div>
+      <div class="partner-logo"><img src="images/p11.jpg" alt="Partner 11"></div>
+      <div class="partner-logo"><img src="images/p12.jpg" alt="Partner 12"></div>
+      <div class="partner-logo"><img src="images/p13.jpg" alt="Partner 13"></div>
+      <div class="partner-logo"><img src="images/p14.jpg" alt="Partner 14"></div>
+      <div class="partner-logo"><img src="images/p15.jpg" alt="Partner 15"></div>
+      <div class="partner-logo"><img src="images/16.jpg" alt="Partner 16"></div>
+      <div class="partner-logo"><img src="images/p17.jpg" alt="Partner 17"></div>
+      <div class="partner-logo"><img src="images/p18.jpg" alt="Partner 18"></div>
+      <div class="partner-logo"><img src="images/p19.jpg" alt="Partner 19"></div>
+      <div class="partner-logo"><img src="images/p20.jpg" alt="Partner 20"></div>
       <!-- ... up to logo30.png -->
     </div>
   </div>
@@ -497,27 +660,70 @@
 
 <script>
 document.addEventListener("DOMContentLoaded", function () {
+
+  // === WHAT’S NEW: PREVIOUS WORKSHOP SLIDER ===
+  const previousWorkshopTrack = document.getElementById("carouselTrack");
+const previousPrevBtn = document.querySelector(".prev-btn");
+const previousNextBtn = document.querySelector(".next-btn");
+const previousSlides = previousWorkshopTrack?.querySelectorAll("img") || [];
+let previousIndex = 0;
+
+function updatePreviousWorkshop() {
+  const slideWidth = previousWorkshopTrack.offsetWidth; // now 100% of container
+  previousWorkshopTrack.style.transform = `translateX(-${previousIndex * slideWidth}px)`;
+}
+
+if (previousNextBtn && previousPrevBtn && previousSlides.length) {
+  previousNextBtn.addEventListener("click", () => {
+    previousIndex = (previousIndex + 1) % previousSlides.length;
+    updatePreviousWorkshop();
+  });
+
+  previousPrevBtn.addEventListener("click", () => {
+    previousIndex = (previousIndex - 1 + previousSlides.length) % previousSlides.length;
+    updatePreviousWorkshop();
+  });
+
+  setInterval(() => {
+    previousIndex = (previousIndex + 1) % previousSlides.length;
+    updatePreviousWorkshop();
+  }, 4000);
+
+  window.addEventListener("resize", updatePreviousWorkshop);
+}
+
+  // === NEWS TICKER CLONE ===
+  const ticker = document.getElementById("ticker-track");
+  if (ticker) {
+    const clone = ticker.innerHTML;
+    ticker.innerHTML += clone;
+  }
+
   // === KNOW OUR CITY: CIRCLE TOGGLE ===
   const cityData = [
     {
       subheading: "History",
-      description:
-        "Gurgaon, once a village associated with Guru Dronacharya... (shortened)"
+      description: "Named after Guru Dronacharya, to whom it was gifted as a village, Gurgaon has evolved from a quiet agrarian district into a global business hub—home to over 250 Fortune 500 companies and contributing more than 50% to Haryana’s GDP. Yet, despite its modern skyline and booming economy, the city now faces the urgent challenge of balancing rapid growth with sustainability and inclusive development."
     },
     {
-      subheading: "Office and Department",
-      description:
-        "The Municipal Corporation of Gurgaon (MCG)... (shortened)"
+      subheading: "Office And Departments",
+      description: "The Municipal Corporation of Gurgaon (MCG) is the civic body entrusted with the administration and governance of Gurgaon. It was formed in 2008 and has 36 wards each headed by an elected councilor. The Mayor is the functional head of MCG while the Chairperson (a Haryana Civil Service officer) is the executive head of the body. As a civic entity, the MCG plays a central role in the management and development of Gurgaon, working to enhance the quality of life and provide essential public services to the residents of the city."
     },
     {
       subheading: "City Spaces",
-      description:
-        "City spaces play a crucial role... (shortened)"
+      description: "City spaces play a crucial role in shaping our city’s experience. Extending beyond homes and offices, they lend a character and vibe to the city. These spaces provide recreation, shopping and activity. Some spaces such as parks also foster a sense of community and belonging. They encourage public interaction, exchange, and contribute to livelihoods, creating a positive atmosphere. While Gurgaon has state-of-the art indoor spaces such as malls, it certainly needs more uniformly accessible, people-centric open spaces."
     },
     {
-      subheading: "Governance",
-      description:
-        "The 74th amendment to the Constitution in 1992... (shortened)"
+      subheading: "City Governance",
+      description: "The 74th amendment to the Constitution in 1992 paved the way for municipal or local governments, granting them constitutional validity and autonomy. The 12th schedule of the Indian Constitution also outlines the functions delegated to local city governments, encompassing areas such as water supply, sanitation, and building regulations."
+    },
+    {
+      subheading: "Eco Hub",
+      description: "bfdvgbg",
+    },
+    {
+      subheading: "Quick Help",
+      description: "",
     }
   ];
 
@@ -534,109 +740,144 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // === SLIDER FOR SUSTAINABILITY TOPICS ===
-  const grid = document.getElementById('topicsGrid');
-  const topicItem = document.querySelector('.topic-item');
+  // === EXPERT OPINION SLIDER ===
+  const expertTrack = document.getElementById('expertTrack');
+  if (expertTrack) {
+    let expertItems = Array.from(expertTrack.children);
+    const visibleExpertCount = 2;
+    const totalExpertItems = expertItems.length;
 
-  if (grid && topicItem) {
-    const itemWidth = topicItem.offsetWidth + 30;
-    const totalCards = grid.children.length;
-    const visibleCards = 5;
-    const maxIndex = totalCards - visibleCards;
-    let topicIndex = 0;
-
-    const updateSlider = () => {
-      const translateX = -(topicIndex * itemWidth);
-      grid.style.transform = `translateX(${translateX}px)`;
-    };
-
-    const leftBtn = document.querySelector('.slider-btn.left');
-    const rightBtn = document.querySelector('.slider-btn.right');
-
-    if (leftBtn && rightBtn) {
-      leftBtn.addEventListener('click', () => {
-        if (topicIndex > 0) {
-          topicIndex--;
-          updateSlider();
-        }
-      });
-
-      rightBtn.addEventListener('click', () => {
-        if (topicIndex < maxIndex) {
-          topicIndex++;
-          updateSlider();
-        }
-      });
+    for (let i = 0; i < visibleExpertCount; i++) {
+      const clone = expertItems[i].cloneNode(true);
+      clone.classList.add('clone');
+      expertTrack.appendChild(clone);
     }
 
-    updateSlider();
-  }
+    expertItems = Array.from(expertTrack.children);
+    let expertIndex = 0;
+    const style = getComputedStyle(expertItems[0]);
+    const expertItemWidth =
+      expertItems[0].offsetWidth +
+      parseFloat(style.marginLeft) +
+      parseFloat(style.marginRight);
 
-  // ✅ === EXPERT OPINIONS SLIDER (2 at a time, auto-slide) ===
-  const expertSlides = document.querySelectorAll(".expert-slide");
-  let expertIndex = 0;
+    function slideExperts() {
+      expertIndex++;
+      expertTrack.style.transition = 'transform 0.5s ease-in-out';
+      expertTrack.style.transform = `translateX(-${expertIndex * expertItemWidth}px)`;
 
-  function showExpertSlide(index) {
-    expertSlides.forEach((slide, i) => {
-      slide.style.display = i === index ? "flex" : "none";
-    });
-  }
-
-  function nextExpertSlide() {
-    expertIndex = (expertIndex + 1) % expertSlides.length;
-    showExpertSlide(expertIndex);
-  }
-
-  if (expertSlides.length) {
-    showExpertSlide(expertIndex);
-    setInterval(nextExpertSlide, 5000); // 5-second auto-slide
-  }
-
-  // === WORKSHOP COUNT ANIMATION ===
-  const countElement = document.getElementById("workshopCount");
-  const target = 47;
-  const speed = 30;
-  let counting = false;
-
-  function startCounting() {
-    if (counting || !countElement) return;
-    counting = true;
-    let count = 0;
-
-    const counter = setInterval(() => {
-      if (count < target) {
-        count++;
-        countElement.textContent = count + "+";
-      } else {
-        clearInterval(counter);
-        counting = false;
+      if (expertIndex * visibleExpertCount >= totalExpertItems + visibleExpertCount) {
+        setTimeout(() => {
+          expertTrack.style.transition = 'none';
+          expertTrack.style.transform = 'translateX(0)';
+          expertIndex = 0;
+        }, 500);
       }
-    }, speed);
+    }
+
+    setInterval(slideExperts, 6000);
   }
 
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        startCounting();
-      }
+  // === INFOCUS SLIDER ===
+  document.querySelectorAll('.infocus-card').forEach(card => {
+    const slider = card.querySelector('.image-slider');
+    const slides = slider.querySelectorAll('a');
+    let currentIndex = 0;
+
+    function updateSlider() {
+      const slideWidth = slider.clientWidth;
+      slider.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+    }
+
+    card.querySelector('.arrow.left').addEventListener('click', () => {
+      const totalSlides = slider.children.length;
+      currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+      updateSlider();
     });
-  }, { threshold: 0.5 });
 
-  const workshopBox = document.querySelector(".workshop-right");
-  if (workshopBox) observer.observe(workshopBox);
+    card.querySelector('.arrow.right').addEventListener('click', () => {
+      const totalSlides = slider.children.length;
+      currentIndex = (currentIndex + 1) % totalSlides;
+      updateSlider();
+    });
 
-  // === PARTNER LOGO CAROUSEL (AUTO + PAUSE ON HOVER) ===
-  const track = document.getElementById('partnersTrack');
-  const logos = document.querySelectorAll('.partner-logo');
+    window.addEventListener('resize', updateSlider);
+  });
+
+  // === WORKSHOP SLIDER ===
+  const workshopTrack = document.querySelector('.slider-track');
+  const prevBtn = document.querySelector('.slider-btn.prev');
+  const nextBtn = document.querySelector('.slider-btn.next');
+
+  let index = 0;
+  const visibleItems = 3;
+  const totalItems = document.querySelectorAll('.slider-track img').length;
+  let workshopAutoSlideInterval;
+
+  function updateWorkshopSlider() {
+    const slideWidth = document.querySelector('.slider-track img').offsetWidth + 30;
+    const newPosition = -index * slideWidth;
+    workshopTrack.style.transform = `translateX(${newPosition}px)`;
+  }
+
+  prevBtn.addEventListener('click', () => {
+    if (index > 0) {
+      index--;
+      updateWorkshopSlider();
+    }
+  });
+
+  nextBtn.addEventListener('click', () => {
+    if (index < totalItems - visibleItems) {
+      index++;
+      updateWorkshopSlider();
+    }
+  });
+
+  function startWorkshopAutoSlide() {
+    workshopAutoSlideInterval = setInterval(() => {
+      index++;
+      if (index > totalItems - visibleItems) {
+        index = 0;
+      }
+      updateWorkshopSlider();
+    }, 4000);
+  }
+
+  function stopWorkshopAutoSlide() {
+    clearInterval(workshopAutoSlideInterval);
+  }
+
+  startWorkshopAutoSlide();
+
+  const workshopContainer = document.querySelector('.slider-container') || workshopTrack.parentElement;
+  workshopContainer.addEventListener('mouseenter', stopWorkshopAutoSlide);
+  workshopContainer.addEventListener('mouseleave', startWorkshopAutoSlide);
+
+  // === PARTNER LOGO CAROUSEL ===
+  const partnerTrack = document.getElementById('partnersTrack');
+  let logos = Array.from(document.querySelectorAll('.partner-logo'));
   const carousel = document.querySelector('.partners-carousel');
   const visibleCount = 7;
   let currentLogoIndex = 0;
-  let autoSlideInterval;
+  let partnerAutoSlideInterval;
 
-  function updateCarousel() {
+  const clones = logos.slice(0, visibleCount).map(logo => {
+    const clone = logo.cloneNode(true);
+    clone.classList.add('clone');
+    partnerTrack.appendChild(clone);
+    return clone;
+  });
+
+  logos = Array.from(document.querySelectorAll('.partner-logo'));
+
+  function updatePartnerCarousel() {
     if (!logos.length) return;
-    const shift = currentLogoIndex * (logos[0].offsetWidth + 40);
-    track.style.transform = `translateX(-${shift}px)`;
+    const logoWidth = logos[0].offsetWidth;
+    const logoMargin = 60;
+    const shift = currentLogoIndex * (logoWidth + logoMargin);
+    partnerTrack.style.transition = 'transform 0.5s ease-in-out';
+    partnerTrack.style.transform = `translateX(-${shift}px)`;
 
     logos.forEach(logo => logo.classList.remove('active'));
     const centerIndex = currentLogoIndex + Math.floor(visibleCount / 2);
@@ -645,33 +886,41 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-  function startAutoSlide() {
-    autoSlideInterval = setInterval(() => {
+  function startPartnerAutoSlide() {
+    partnerAutoSlideInterval = setInterval(() => {
       currentLogoIndex++;
-      if (currentLogoIndex > logos.length - visibleCount) {
-        currentLogoIndex = 0;
+      updatePartnerCarousel();
+
+      if (currentLogoIndex >= logos.length - visibleCount) {
+        setTimeout(() => {
+          partnerTrack.style.transition = 'none';
+          currentLogoIndex = 0;
+          const logoWidth = logos[0].offsetWidth;
+          const logoMargin = 60;
+          const shift = currentLogoIndex * (logoWidth + logoMargin);
+          partnerTrack.style.transform = `translateX(-${shift}px)`;
+        }, 500);
       }
-      updateCarousel();
     }, 3000);
   }
 
-  function stopAutoSlide() {
-    clearInterval(autoSlideInterval);
+  function stopPartnerAutoSlide() {
+    clearInterval(partnerAutoSlideInterval);
   }
 
-  if (track && logos.length >= visibleCount) {
-    updateCarousel();
-    startAutoSlide();
+  if (partnerTrack && logos.length >= visibleCount) {
+    updatePartnerCarousel();
+    startPartnerAutoSlide();
 
     if (carousel) {
-      carousel.addEventListener('mouseenter', stopAutoSlide);
-      carousel.addEventListener('mouseleave', startAutoSlide);
+      carousel.addEventListener('mouseenter', stopPartnerAutoSlide);
+      carousel.addEventListener('mouseleave', startPartnerAutoSlide);
     }
   }
+
 });
+
 </script>
-
-
 
 
 </body>
